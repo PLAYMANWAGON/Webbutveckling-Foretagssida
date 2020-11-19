@@ -31,7 +31,6 @@ header h1 {
 }
 
 .search-area > input {
-  width: auto;
   border: none;
 }
 
@@ -81,23 +80,6 @@ h2:hover {
   color: rgb(80, 80, 80);
 }
 
-.highlightContainer {
-  margin-top: 4rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  position: relative;
-  color: white;
-}
-
-.highlightContainer > img {
-  width: 100%;
-  height: auto;
-}
-
-.highlightContainerhover:hover {
-  opacity: 1;
-}
-
 h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -108,5 +90,81 @@ h3 {
   transform: translate(-50%, -50%);
   text-shadow: 0px 4px 16px #000000;
 }
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 4px 12px #000000;
+  text-align: center;
+}
+
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 28px;
+  text-align: left;
+  margin-left: 2rem;
+  margin-bottom: -2rem;
+}
+
+.highlightContainer {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: relative;
+  color: white;
+  white-space: nowrap;
+}
+
+.highlightContainer > img {
+  width: 100%;
+  height: auto;
+}
+
+.highlightContainer:hover {
+  opacity: 0.7;
+}
+
+.gridContainer {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gridContainer > div img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gridContainer > div h4 {
+  position: relative;
+  color: white;
+  white-space: nowrap;
+}
+
+.gridContainer > .img1:hover {
+  opacity: 0.7;
+}
+
+.gridContainer > .img2:hover {
+  opacity: 0.7;
+}
+
+.gridContainer > .img3:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
   
 

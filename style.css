@@ -125,12 +125,55 @@ h7 {
   font-weight: 300;
   font-size: 4vw;
   position: absolute;
-  top:50%;
+  top:40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 0px 4px 16px black;
 }
 
+subtext {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 1.5vw;
+  position: absolute;
+  top:60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 4px 16px black;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin: 1rem;
+  flex-wrap: nowrap;
+  border-style: solid;
+  border-color: gainsboro;
+}
+footer > div img {
+  width: 32px;
+}
+
+footer > div img:hover {
+  transform: scale(1.2);
+}
+
+footer > div {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.uselessShitContainer {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer > .uselessShitContainer > div:hover {
+  font-weight: bold;
+}
 
 
 .newsletterContainer {
@@ -145,7 +188,7 @@ h7 {
 
 .newsletterContainer > img {
   width: 100%;
-  height: 20vw;
+  height: 12vw;
 }
 
 .highlightContainer {
@@ -246,6 +289,9 @@ h7 {
 
   h1 {
     font-size:4vw;
+  }
+  .uselessShitContainer {
+    display: none;
   }
 }
 

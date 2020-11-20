@@ -1,4 +1,5 @@
 * {
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -21,7 +22,7 @@ header > div {
 }
 
 header h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  
   text-transform: uppercase;
 }
 
@@ -40,7 +41,7 @@ h1 > span {
 
 .search-area > button {
   padding: 0.2rem 0.5rem;
-  font-family: Arial, Helvetica, sans-serif;
+  
   background-color: white;
   border: 2px solid 333;
   box-shadow: 4px 4px 10px rgba(33, 33, 33, 0.2);
@@ -59,6 +60,11 @@ header > div > button:hover {
   transform: scale(1.2);
 }
 
+del {
+  color: gray;
+}
+
+
 nav {
   background-color: gainsboro;
   display: flex;
@@ -73,15 +79,12 @@ h2 {
   text-transform: uppercase;
   font-size: 14px;
   padding: 0.5rem 2rem;
-  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
-h2:hover {
-  color: rgb(80, 80, 80);
-}
+
 
 h3 {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 6vw;
   position: absolute;
@@ -92,7 +95,6 @@ h3 {
 }
 
 h4 {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 3vw;
   top: 50%;
@@ -105,7 +107,6 @@ h4 {
 }
 
 h5 {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 2vw;
   text-align: left;
@@ -114,14 +115,12 @@ h5 {
 }
 
 h6 {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   text-align: center;
   color: black;
 }
 
 h7 {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 4vw;
   position: absolute;
@@ -132,7 +131,7 @@ h7 {
 }
 
 subtext {
-  font-family: Arial, Helvetica, sans-serif;
+  
   font-weight: 100;
   font-size: 1.5vw;
   position: absolute;
@@ -140,6 +139,21 @@ subtext {
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 0px 4px 16px black;
+}
+
+sale {
+  font-size: 16px;
+  color: red;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(80, 80, 80);
 }
 
 footer {
@@ -152,7 +166,7 @@ footer {
   border-color: gainsboro;
 }
 footer > div img {
-  width: 32px;
+  width: 28px;
 }
 
 footer > div img:hover {
@@ -169,6 +183,12 @@ footer > div {
   width: 40%;
   display: flex;
   justify-content: space-evenly;
+}
+
+.itemFlex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 footer > .uselessShitContainer > div:hover {
@@ -207,7 +227,9 @@ footer > .uselessShitContainer > div:hover {
 }
 
 .highlightContainer:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  transform: scale(0.97);
+  transition: 50ms ease-out
 }
 
 .gridTrending {
@@ -229,15 +251,21 @@ footer > .uselessShitContainer > div:hover {
 }
 
 .gridTrending > .img1:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  transform: scale(0.97);
+  transition: 50ms ease-out
 }
 
 .gridTrending > .img2:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  transform: scale(0.97);
+  transition: 50ms ease-out
 }
 
 .gridTrending > .img3:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  transform: scale(0.97);
+  transition: 50ms ease-out
 }
 
 .gridCategory {
@@ -255,44 +283,102 @@ footer > .uselessShitContainer > div:hover {
 }
 
 .gridCategory > .cat1:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  transform: scale(0.97);
+  transition: 50ms ease-out
 }
 .gridCategory > .cat2:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  transform: scale(0.97);
+  transition: 50ms ease-out
 }
 .gridCategory > .cat3:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  transform: scale(0.97);
+  transition: 50ms ease-out
 }
 .gridCategory > .cat4:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  transform: scale(0.97);
+  transition: 50ms ease-out
 }
 .gridCategory > .cat5:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  transform: scale(0.97);
+  transition: 50ms ease-out
+}
+
+nav2 {
+  border-style: solid;
+  border-right: none;
+  border-top: none;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20rem;
+  height: 100%;
+  background-color: gainsboro;
+  box-shadow: 0px 0px 64px black;
+  transition: 100ms e-out;
+}
+
+nav2 > ul > li {
+  margin-top: 2rem;
+  font-size: 32px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav2 > ul > li:hover {
+  transform: scale(0.9);
+  transition: 50ms ease-out;
+}
+
+.burgerToggle {
+  display: none;
+}
+
+.burgerToggle:not(:checked) + nav2 {
+  display: none;
+}
+
+header > .headerButtons > span {
+  transform: scale(1.2);
+}
+
+.gridShop {
+  margin-top: 2rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  display: grid;
+  grid-gap: 1vw;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 
-
-@media (max-width: 500px) {
-
-  .gridCategory {
-    grid-gap: 2rem;
-  }
+.gridShop > div img {
+  max-width: 100%;
 }
 
-@media (max-width: 712px) {
-  .search-area {
-    display: none;
-  }
+.gridItem {
+  background-color: gainsboro;
+  border-width: 1px;
+  padding: 0.5vw 0.5vw 1vw 0.5vw;
+  
 }
 
-@media (max-width: 800px) {
+.gridItem > div p {
+  color: grey;
+}
 
-  h1 {
-    font-size:4vw;
-  }
-  .uselessShitContainer {
-    display: none;
-  }
+.gridItem:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 12px black;
+  transition: 100ms ease-out;
 }
 
 @media (max-width: 1000px) {
@@ -328,10 +414,54 @@ footer > .uselessShitContainer > div:hover {
     margin-left: 2vw;
     margin-right: 2vw;
   }
+
+  .gridShop {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  h1 {
+    font-size:4vw;
+  }
+
+  h2 {
+    font-size: 1vw;
+  }
+  
+  .uselessShitContainer {
+    display: none;
+  }
+
+  .gridShop {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+@media (max-width: 712px) {
+  .search-area {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .gridCategory {
+    grid-gap: 2rem;
+  }
+
+  .gridShop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }
 
 
 
-
-  
 

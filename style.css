@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+body {
+  height: 100%;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -157,10 +161,15 @@ a:hover {
 }
 
 footer {
+  position: relative;
+  bottom: 0;
+  width: 95%;
+  left: 0;
+  right: 0;
+  margin: 0.5% auto;
   display: flex;
   justify-content: space-between;
   font-size: 16px;
-  margin: 1rem;
   flex-wrap: nowrap;
   border-style: solid;
   border-color: gainsboro;
@@ -326,11 +335,24 @@ nav2 {
 nav2 > ul > li {
   margin-top: 2rem;
   font-size: 32px;
-  list-style: none;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+}
+nav2 > ul > a > li{
+  margin-top: 2rem;
+  font-size: 32px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+
+nav2 > ul > a > li:hover {
+  transform: scale(0.9);
+  transition: 50ms ease-out;
 }
 
 nav2 > ul > li:hover {
@@ -390,21 +412,93 @@ header > .headerButtons > span {
 }
 
 .arrow {
+  box-shadow: 0 0 12px black;
   background-color: black;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   font-size: 24px;
 
+}
+
+.arrow:hover {
+  transform: scale(1.15);
+  transition: 50ms ease-out;
 }
 
 .arrowFlex > a > .arrow p {
   color: white;
 }
 
+.viewItem {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 16rem 2rem;
+}
+
+.viewItemInfo{
+  margin: 4vw;
+}
+
+.actionButton {
+  width: 84%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 1rem;
+  background-color:gainsboro;
+}
+
+.actionButton > p {
+  color: black;
+}
+
+.actionButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px black;
+  transition: 50ms ease-out;
+}
+
+.alignedItems {
+  text-align: center;
+}
+
+.inputStyling {
+  font-size: 16px;
+  width: 100%;
+  padding: 20px;
+}
+
+.viewItem > div h5 {
+  text-align: end;
+}
+
+.thisIsArticle {
+  text-align: center;
+}
+
+.thisIsText {
+  margin: 2rem 24vw 2rem 24vw;
+  Font-size: 18px;
+}
+
+.thisIsText > p {
+  margin-bottom: 2rem;
+}
+
+.thisIsText >  img {
+  width: 100%;
+}
+
+
+
 @media (max-width: 1000px) {
 
   header {
     margin-left: 2vw;
     margin-right: 2vw;
+  }
+
+  .thisIsText {
+    margin: 2rem 12vw 2rem;
+    Font-size: 18px;
   }
 
   nav {
@@ -437,6 +531,12 @@ header > .headerButtons > span {
   .gridShop {
     margin-left: 2vw;
     margin-right: 2vw;
+  }
+
+  .viewItem {
+    display: flex;
+    justify-content: space-around;
+    margin: 2vw 2vw;
   }
 
 }

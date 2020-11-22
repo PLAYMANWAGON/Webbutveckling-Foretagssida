@@ -439,6 +439,7 @@ header > .headerButtons > span {
 }
 
 .actionButton {
+  text-align: center;
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem 1rem;

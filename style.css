@@ -381,6 +381,25 @@ header > .headerButtons > span {
   transition: 100ms ease-out;
 }
 
+.arrowFlex {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 2rem 24rem 2rem;
+  font-weight: bold;
+}
+
+.arrow {
+  background-color: black;
+  padding: 1rem 2rem;
+  font-size: 24px;
+
+}
+
+.arrowFlex > a > .arrow p {
+  color: white;
+}
+
 @media (max-width: 1000px) {
 
   header {

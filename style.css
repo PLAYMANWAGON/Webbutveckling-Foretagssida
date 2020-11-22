@@ -438,8 +438,16 @@ header > .headerButtons > span {
   margin: 4vw;
 }
 
+.viewItem > div h5 {
+  text-align: end;
+}
+
+.viewItem > div img {
+  width: 25vw;
+}
+
 .actionButton {
-  width: 84%;
+  width: 20.5vw;
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem 1rem;
@@ -448,6 +456,8 @@ header > .headerButtons > span {
 
 .actionButton > p {
   color: black;
+}.viewItem > div h5 {
+  text-align: end;
 }
 
 .actionButton:hover {
@@ -466,9 +476,7 @@ header > .headerButtons > span {
   padding: 20px;
 }
 
-.viewItem > div h5 {
-  text-align: end;
-}
+
 
 .thisIsArticle {
   text-align: center;
@@ -487,7 +495,30 @@ header > .headerButtons > span {
   width: 100%;
 }
 
+@media (max-width: 1200px) {
+  .viewItemInfo{
+    margin: 0.5vw;
+  }
 
+  .viewItem {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2vw 2vw;
+  }
+
+  .viewItem > div img {
+    width: 50vw;
+  }
+
+  .actionButton {
+    flex-wrap: wrap;
+  }
+
+  .viewItem {
+    margin: 2rem 2vw 2rem;
+  }
+}
 
 @media (max-width: 1000px) {
 
@@ -533,11 +564,9 @@ header > .headerButtons > span {
     margin-right: 2vw;
   }
 
-  .viewItem {
-    display: flex;
-    justify-content: space-around;
-    margin: 2vw 2vw;
-  }
+
+
+  
 
 }
 
@@ -548,7 +577,7 @@ header > .headerButtons > span {
   }
 
   h2 {
-    font-size: 1vw;
+    font-size: 2vw;
   }
   
   .uselessShitContainer {

@@ -407,7 +407,7 @@ header > .headerButtons > span {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  margin: 2rem 24rem 2rem;
+  margin: 2rem 0rem 2rem 0rem;
   font-weight: bold;
 }
 
@@ -439,7 +439,7 @@ header > .headerButtons > span {
 }
 
 .actionButton {
-  text-align: center;
+  width: 84%;
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem 1rem;
